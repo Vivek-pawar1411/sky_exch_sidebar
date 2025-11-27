@@ -1,0 +1,152 @@
+.bet-box-custom {
+  display: none;
+  background: #d7e9fa;
+  border-radius: 4px;
+  padding: 10px;
+  margin-top: 15px;
+  box-shadow: 0 0 4px rgba(0,0,0,0.1);
+  overflow: auto;
+
+}
+
+.center-section{
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+
+
+
+.bet-box-custom.active {
+  display: block;
+  
+}
+
+.bet-options {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background: #b6daf9;
+  padding: 8px;
+  border-radius: 3px;
+}
+
+.bet-controls {
+  display: flex;
+  align-items: center;
+    flex-wrap: wrap;
+
+  gap: 8px;
+}
+
+
+
+.bet-controls button,
+.bet-amounts button {
+  background: linear-gradient(180deg, #fff, #e5e5e5);
+  border: 1px solid #ccc;
+  border-radius: 3px;
+      color: #243a48;
+
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.bet-amounts button{
+    width:80px;
+    
+}
+
+.bet-controls button:hover,
+.bet-amounts button:hover {
+  background: #d0e5ff;
+}
+
+.bet-odds {
+  font-weight: bold;
+  background: #e0f2ff;
+  padding: 5px 8px;
+  border-radius: 3px;
+}
+
+.bet-controls input {
+  width: 70px;
+  padding: 4px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.bet-place {
+  background: #7f93a5;
+  color: #243a48;
+  font-weight: bold;
+}
+
+.bet-amounts {
+  display: flex;
+  justify-content: flex-end;
+  gap:10px;
+  padding-top: 8px;
+  background: #cbe3fa;
+  flex-wrap: wrap;
+}
+
+.market-box {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 10px;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+}
+
+.market-header {
+  background-color: #253746;
+  color: white;
+  padding: 6px 10px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+  border-bottom: 1px solid #222;
+}
+
+.market-title {
+  display: flex;
+  align-items: center;
+  font-weight: 900;
+}
+
+
+.market-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+}
+
+.market-table tr {
+  border-bottom: 1px solid #ddd;
+
+}
+
+.market-table td {
+  width: 50%;
+  padding: 8px 10px;
+  font-size: 14px;
+  color: #000;
+}
+
+.market-table .odds {
+  text-align: center;
+  background-color: #90ee90;
+  display: flex;
+  justify-content: center;
+  width: 80px;
+  font-weight: bold;
+  border-left: 1px solid #ddd;
+
+}
+
+

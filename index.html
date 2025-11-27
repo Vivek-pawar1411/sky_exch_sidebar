@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sky Exchange </title>
+  <link rel="icon" type="image/png" href="image/sky_logo.png">
+  <link rel="stylesheet" href="/css/header.css">
+  <link rel="stylesheet" href="/css/footer.css">
+  <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+  <div id="header"></div>
+  <div id="main"></div>
+  <div id="footer"></div>
+  <script>
+    async function loadHTML(id, file) {
+      const el = document.getElementById(id);
+      const response = await fetch(file);
+      el.innerHTML = await response.text();
+    }
+    async function initPage() {
+      await loadHTML("header", "/component/header.html");
+      await loadHTML("main", "/component/main.html");
+      await loadHTML("footer", "/component/footer.html");
+
+      window.toggleSidebar = function () {
+        const sidebar = document.getElementById("sidebar");
+        if (sidebar) {
+          sidebar.classList.toggle("active");
+        } 
+      };
+    }
+    document.addEventListener("DOMContentLoaded", initPage);
+  </script>
+</body>
+</html>

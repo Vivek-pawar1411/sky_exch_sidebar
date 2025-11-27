@@ -1,0 +1,150 @@
+    body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: #e9edf2;
+            color: #3a4b67;
+
+}
+
+.chat-widget {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    height: 75vh;
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 20px;
+    background-color: #ebe6e6;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Header */
+.chat-header {
+    background: linear-gradient(90deg, #2d2d2d, #6b6b6b);
+    height: 150px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    color: white;
+    z-index: 1;
+
+}
+
+.chat-header .logo_chat {
+    position: fixed;
+    top:25%;
+    width: 45px;
+    height: 45px;
+}
+
+.close-btn {
+    position: fixed;
+    top:25%;
+    right:40px;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+/* Main Card */
+.chat-body {
+    padding: 10px;
+     position: relative;
+    top: -80px; /* move the body up to overlap header */
+    z-index: 2;
+}
+
+.card {
+    background: white;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 18px;
+    box-shadow: 0px 3px 6px rgba(0,0,0,0.15);
+    position: relative;
+    z-index: 2;
+}
+
+.title {
+    margin-bottom: 12px;
+    font-size: 14px;
+
+    font-weight: bold;
+}
+
+/* Message Preview */
+.msg-preview {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: white;
+    padding: 10px;
+}
+
+.msg-icon {
+    width: 30px;
+    height: 30px;
+}
+
+.msg-preview h4 {
+    margin: 0;
+    font-size: 15px;
+}
+
+.msg-preview p {
+    margin: 0;
+    color: #7777;
+    font-size: 12px;
+}
+
+.time {
+    margin-left: auto;
+    font-size: 12px;
+    color: #243a48;
+    font-weight: 600;
+}
+
+/* FAQ Section */
+.faq-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-icon {
+    width: 18px;
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.faq-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding:5px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.faq-item:hover, .msg-preview:hover{
+    background-color: #acabab;
+}
+
+.faq-icon {
+    width: 28px;
+    height: 28px;
+}
+
+.more {
+    margin-top: 10px;
+    color: #091e42de;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+
+

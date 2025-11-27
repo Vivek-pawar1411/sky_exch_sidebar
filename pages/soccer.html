@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soccer</title>
+    <link rel="icon" type="image/png" href="/image/skyexch.png">
+    <link rel="stylesheet" href="/css/multimarkets.css">
+    <link rel="stylesheet" href="/css/kabaddi.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/esoccer.css">
+    <link rel="stylesheet" href="/css/footer.css">
+     <link rel="stylesheet" href="/css/soccer.css">
+          <link rel="stylesheet" href="/css/chat-bot.css"> 
+
+</head>
+<body>
+    <header id="header"></header>
+    <main>
+        <div class="container">
+            <div class="left-section">
+                <ul>
+                    <li class="active"><a href="#">Sports</a></li>
+                    <li><a href="/pages/sportz.html">All Sports</a></li>
+                    <li class="active"><a href="/pages/soccer.html">Soccer</a></li>
+                  <li class="top"><a href="#">Top Competitions</a></li>
+
+<li><a href="#">Falcons Champions Trophy T20</a></li>
+<li><a href="#">International Matches</a></li>
+
+<li class="top"><a href="#">Top Countries</a></li>
+<li><a href="#">England</a></li>
+<li><a href="#">New Zealand</a></li>
+
+ <li  class="top"><a href="#">International Competitions</a></li>
+
+
+<li><a href="#">The Ashes</a></li>
+<li><a href="#">WBBL</a></li>
+
+
+ <li  class="top"><a href="#">Common</a></li>
+ <li><a href="#">All Countries</a></li>
+<li><a href="#">All Competitions</a></li>
+    
+            </ul>
+            </div>
+
+            <div class="center-section">
+                <div class="kabaddi-img"> <img src="/image/page/soccer.jpg" alt=""> </div>
+ <div class="sports-highlights">
+                    <div class="highlight-header">
+                        <span>Sports Highlights</span>
+                        <div class="view-by">
+                            <label>View by</label>
+                            <select>
+                                <option>Competition</option>
+                                <option>Time</option>
+                                <option>Matched</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="l-match">
+                        <div></div>
+                        <div class="r-match">
+                            <div > Matched</div>
+                            <div class="betting-op op1">1</div>
+                            <div class="betting-op op2">x</div>
+                            <div class="betting-op op3">2</div> 
+                        </div>
+                    </div>
+<div id="match-row" data-sport="Soccer"></div>
+                <div id="footer"></div>
+            </div>
+             </div>
+
+            <div class="right-section">
+                <div class="bet-title">Bet Slip <img src="/image/m_s.png" alt=""></div>
+                <p>Click on the odds to add selections to the betslip.</p>
+                        <img src="/image/text.png" alt="" class="chat-icon">
+
+
+                 <!-- <div class="bet-buttons"  style="margin-top: 20px;padding: 5px;">
+        <button class="cancel-all" id="cancelAll">Cancel All</button>
+        
+        <button class="place-bets" id="placeBets"  onclick="window.location.href='/pages/login_modal.html'">Place Bets</button>
+      </div>
+      <hr>
+      <label class="confirm-check">
+        <input type="checkbox" id="confirmCheck"> Please confirm your bets.
+      </label> -->
+    </div>
+
+    </main>
+    <script src="/script.js" defer> </script>
+       <script src="/match.js" defer> </script>
+    
+   <script>
+  const betButtons = document.querySelector('.bet-buttons');
+  const confirmCheck = document.querySelector('.confirm-check');
+  const cancelBtn = document.getElementById('cancelAll');
+
+  // Hide both by default
+  betButtons.style.display = 'none';
+  confirmCheck.style.display = 'none';
+
+  // Show on odds click
+document.addEventListener("click",function(e){
+    if(e.target.classList.contains("odds-box")){
+         betButtons.style.display = "block";
+        confirmCheck.style.display = "block";
+    }
+});
+
+  // Hide both when cancel is clicked
+document.getElementById("cancelAll").addEventListener("click", function () {
+    document.querySelector(".bet-buttons").style.display = "none";
+    document.querySelector(".confirm-check").style.display = "none";
+});
+
+</script>
+</body>
+</html>

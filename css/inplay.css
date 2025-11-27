@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container-inplay {
+    padding: 1px 10px 0 10px;
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    height: 100%;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.center-section-inplay {
+    width: 73%;
+    height: auto;
+    background-color: #eeeeee;
+    height:100vh;
+    overflow-y: scroll;
+}
+
+.title{
+    width: 100%;
+    height: 35px;
+        display: flex;
+        align-items: center;
+
+}
+
+.title ul{
+    display: flex;
+    flex-direction: row;
+}
+
+.title li{
+    display: flex;
+    font-size: 13px;
+    font-weight: bold;
+    font-family: tahoma,Arial, Helvetica, sans-serif;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    min-width:130px;
+    height: 25px;
+    border: 1px solid #3b5160;
+        border-radius:  3px;
+        background: #ffffff;
+        color:#3b5160;
+        cursor: pointer;
+}
+
+.title li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: inherit;
+  text-align: center;
+  line-height: 25px;
+  text-decoration: none;
+}
+
+
+.title li:hover {
+  text-decoration: underline; 
+}
+
+.title li.active{
+    background: #3b5160;
+    color :#ffffff
+}
+
+
+.title li.active a{
+    color :#ffffff
+}
+
+.right-section{
+    width: 27%;
+    height: 100vh;
+    background-color: white;
+}
+
+.right-section-inplay p{
+    margin-top: 15px;
+    font-size: 13px;
+    padding-left: 5px;
+        color: #1e1e1e;
+font-family: tahoma, Helvetica, sans-serif;
+    background-color: white;
+}
+
+.highlight-header {
+  background-color: #243a48 !important;
+  color: #ffffff !important;
+}
+
+
+
+@media screen and (max-width:600px) {
+
+
+    .title li{
+        min-width: 120px;
+        border-radius: 6px;
+
+    }
+
+    .title{
+   
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+}
+
+
+    .right-section-inplay{
+        display: none;
+    }
+
+    .center-section-inplay{
+        width: 100%;
+    } 
+    
+     #footer{
+        width: 100% !important;
+        display: block;
+    }
+    
+}
+#footer {
+  
+    /* padding: 1px 10px 0 9px;
+    width: 78%; */
+    display: none;
+}
+
+
+@media screen and (max-width:1100px){
+    .center-section-inplay{
+        margin-top: 70px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

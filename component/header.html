@@ -1,0 +1,100 @@
+<body>
+  <header>
+    <div class="header-bar">
+      <div class="left-side">
+        <div class="image-logo" onclick="toggleSidebar()">
+          <img src="/image/skyexch.png" alt="sky">
+        </div>
+        <div class="search-input">
+          <img src="/image/search.png" alt="search">
+          <input type="text" placeholder="Search Events">
+        </div>
+      </div>
+      <div class="header-right-side">
+        <div class="logo"><img src="/image/user.png" alt="user"> </div>
+        <div class="login"><input type="text" placeholder="Username"> </div>
+        <div class="login"> <input type="text" placeholder="Password"> </div>
+        <div class="login"> <input type="text" placeholder="Validation"> <img src="/image/valid_pin.png" alt=""></div>
+
+        <div class="login-btn">
+          <button onclick="window.location.href='/pages/login_modal.html'"> Login<img src="/image/logout.png" alt="logout"></button>
+         
+            <button
+  style="background-color: #666; background-image: linear-gradient(-180deg, #666666 0%, #333333 100%); color: #fff; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer;"
+  onclick="window.location.href='/pages/sign_up.html'">
+  SignUp
+</button>
+
+        </div>
+
+      </div>
+    </div>
+
+ 
+
+    <div class="navbar">
+      <ul>
+        <li><a href="/index.html" class="nav-link">Home</a></li>
+        <li><a href="/pages/inplay.html" class="nav-link">In-Play</a></li>
+        <li><a href="/pages/multimarkets.html" class="nav-link">Multi Markets</a></li>
+        <li><a href="/pages/cricket.html" class="nav-link">Cricket
+           <div class="live-box">
+  <div class="left"> <img src="/image/stream.png" alt="live" /> </div>
+ <div class="right"> 4</div></div>
+        </a></li>
+        <li><a href="/pages/soccer.html" class="nav-link">Soccer
+             <div class="live-box" id="live2">
+  <div class="left"> <img src="/image/stream.png" alt="live" /> </div>
+ <div class="right"> 6</div></div>
+        </a></li>
+        <li><a href="/pages/tennis.html" class="nav-link">Tennis
+             <div class="live-box" id="live3">
+  <div class="left"> <img src="/image/stream.png" alt="live" /> </div>
+ <div class="right"> 1</div></div>
+        </a></li>
+        <li><a href="/pages/login_modal.html" >Virtual Cricket</a></li>
+        <li><a href="/pages/esoccer.html" class="nav-link">E-Soccer
+             <div class="live-box" id="live4">
+  <div class="left"> <img src="/image/stream.png" alt="live" /> </div>
+ <div class="right"> 6</div></div>
+        </a></li>
+      </ul>
+
+      <div class="right-side">
+        <p> <span class="time_zone">Time Zone : </span> <span class="label">GMT</span><span class="value">+5:30</span></p>
+<button class="one-bet" onclick="window.location.href='/pages/login_modal.html'">
+  <img src="/image/square.png" alt="bet"> One Click Bet
+</button>
+        <li> <a href="/pages/login_modal.html"> Setting <img class="setting-img" src="/image/setting.png" alt="setting"></a> </li>
+      </div>
+    </div>
+    </div>
+
+
+          
+
+      <!-- mobile side bar  -->
+    <div id="sidebar" class="sidebar">
+      <a href="javascript:void(0)" class="closebtn" onclick="toggleSidebar()">×</a>
+      <div class="nav-logo">
+        <img src="/image/s_e_l.png" alt="sky">
+      </div>
+      <ul>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/pages/inplay.html">In-Play</a></li>
+        <li><a href="/pages/multimarkets.html">Multi Markets</a></li>
+        <li><a href="/pages/cricket.html">Cricket</a></li>
+        <li><a href="/pages/soccer.html">Soccer</a></li>
+        <li><a href="/pages/tennis.html">Tennis</a></li>
+        <li><a href="/pages//login_modal.html">Virtual Cricket</a></li>
+        <li><a href="/pages/esoccer.html">E-Soccer</a></li>
+        <li><a href="/pages/login_modal.html">Setting</a></li>
+      </ul>
+    </div>
+
+  </header>
+
+  <script  src="/script.js">
+  
+  </script>
+</body>

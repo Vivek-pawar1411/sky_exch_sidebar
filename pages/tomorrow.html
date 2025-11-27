@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sky Exchange</title>
+    <link rel="stylesheet" href="/css/style.css">
+        <link rel="icon" type="image/png" href="/image/skyexch.png">
+</head>
+<body>
+    <style>
+        .chat-icon{
+    position: fixed;
+    bottom: 30px;   
+    right: 20px;  
+  height: 75px;     
+  width: 75px;
+      border-radius: 34px 3px 34px 34px;
+  z-index: 10000;
+  cursor: pointer;
+ box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3);}
+    </style>
+    <header id="header"></header>
+    
+        <div class="container-inplay">
+            <div class="center-section-inplay">
+                <div class="title">
+                 <ul>
+                    <li ><a href="/pages/inplay.html">In Play</a></li>
+                    <li><a href="/pages/today.html">Today</a></li>
+                    <li class="active"><a href="/pages/tomorrow.html">Tomorrow</a></li>
+                 </ul>
+                </div>
+                <div class="filter-bar">
+  <span class="filter-label"><strong>Sport Filters:</strong></span>
+  <a href="#" class="filter-link">Cricket</a>
+  <span class="dot">•</span>
+  <a href="#" class="filter-link">E-Soccer</a>
+  <span class="dot">•</span>
+  <a href="#" class="filter-link">Soccer</a>
+  <span class="dot">•</span>
+  <a href="#" class="filter-link">Tennis</a>
+  <button class="filter-btn">Filter</button>
+</div>
+<table class="schedule" id="scheduletable"></table>
+           <div id="footer" style="width: 100%;"></div>
+               <div id="mobile_footer"></div>
+
+            </div>
+
+            <div class="right-section">
+    <div class="bet-title">Bet Slip<img src="/image/m_s.png" alt="small_square"></div>
+            <p>Click on the odds to add selections to the betslip.</p>
+             <img src="/image/text.png" alt="" class="chat-icon">
+
+        </div>
+            
+            </div>
+    
+ <script src="/script.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const table = document.getElementById("scheduletable");
+    fetch("/data/inplay_data.json").then(res => res.json()).then(data => {
+            const matches = data.tomorrow;
+            matches.forEach((item, index) => {
+                const row = document.createElement("tr");
+                row.innerHTML = `
+                    <td class="time">${item.time}</td>
+                    <td class="sport">
+                        ${item.sport}
+                        ${item.league ? ` &raquo; ${item.league}` : ""} &raquo;
+                        <a href="${item.link}">${item.team1}</a>
+                        vs
+                        <a href="${item.link}">${item.team2}</a>
+                    </td> `;
+                table.appendChild(row);
+            });
+        })
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,117 @@
+  *{
+  font-family: Tahoma, Helvetica, sans-serif;
+  font-size: 12px;
+}
+
+.center-section{
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+.fancy-container {
+  width: 100%;
+  background-color: #fff;
+}
+
+.fancy-row {
+  display: flex;
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+  justify-content: space-between;
+}
+
+.fancy-header {
+  background: #fff;
+  font-weight: bold;
+}
+
+.fancy-cell {
+    width: 50%;
+  padding: 6px 8px;
+  display: flex;
+  align-items: center;
+}
+
+.fancy_min-max{
+    display: flex;
+}
+
+.fancy-cell:last-child {
+  border-right: none;
+}
+
+.fancy-row:hover {
+  background: #f2f6fa;
+}
+
+
+.no {
+  background: #fda5a5;
+  text-align: center;
+  justify-content: center;
+  cursor: pointer;
+  min-width: 70px;
+}
+
+.yes {
+  background: #97d4ff;
+  text-align: center;
+  justify-content: center;
+  cursor: pointer;
+  min-width: 70px;
+}
+
+.minmax {
+  min-width: 90px;
+}
+
+.fancy_yes-no{
+    /* width: 25%; */
+    display: flex;
+}
+
+
+
+.fancy-bet{
+  background-color: #243a48;
+}
+
+.fancy-bet span{
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 12px;
+}
+
+#betBoxRow > div {
+  padding: 0;
+  border: none;
+}
+.fancy-cell.yes,
+.fancy-cell.no {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* MOBILE BEHAVIOR SAME AS TABLE VERSION */
+@media screen and (max-width: 600px) {
+
+  /* hide the last column */
+  .fancy-cell.hide-mobile {
+    display: none;
+  }
+
+  .bk-price.small.faded,
+  .bk-price.small {
+    display: none;
+  }
+
+  .left-right {
+    display: none;
+  }
+
+  #fancyBetHolder {
+    width: 100%;
+  }
+}

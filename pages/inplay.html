@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inplay</title>
+        <link rel="icon" type="image/png" href="/image/skyexch.png">
+    <link rel="stylesheet" href="/css/multimarkets.css">
+    <link rel="stylesheet" href="/css/kabaddi.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/esoccer.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/inplay.css">
+    <link rel="stylesheet" href="/css/soccer.css">
+         <link rel="stylesheet" href="/css/chat-bot.css"> 
+
+</head>
+<body>
+
+<header id="header"></header>
+
+    <div class="container-inplay">
+        <div class="center-section-inplay">
+            <div class="title">
+                <ul>
+                    <li class="active"><a href="/pages/inplay.html">In play</a></li>
+                    <li><a href="/pages/today.html">Today</a></li>
+                    <li><a href="/pages/tomorrow.html">Tomorrow</a></li>
+                </ul>
+            </div>
+
+            <!-- TEMPLATE -->
+            <template id="sportsTemplate">
+                <div class="sports-highlights">
+                    <div class="highlight-header">
+                        <span class="category-name"></span>
+                        <img src="/image/m_s.png" alt="icon">
+                    </div>
+
+                    <div class="l-match">
+                        <div></div>
+                        <div class="r-match">
+                            <div style="margin-right: 15px;"> Matched</div>
+                       <div class="betting-op op1">1</div>
+                            <div class="betting-op op2">x</div>
+                            <div class="betting-op op3">2</div>
+                        </div>
+                    </div>
+
+                    <div class="matches-container"></div>
+                </div>
+            </template> 
+      </div>   
+        <!-- RIGHT SECTION -->
+        <div class="right-section">
+            <div class="bet-title">Bet Slip <img src="/image/m_s.png" alt=""></div>
+            <p>Click on the odds to add selections to the betslip.</p>
+                    <img src="/image/text.png" alt="" class="chat-icon">
+
+
+            <!-- <div class="bet-buttons" style="margin-top: 20px;padding: 5px;">
+                <button class="cancel-all" id="cancelAll">Cancel All</button>
+                <button class="place-bets" id="placeBets" onclick="location.href='/pages/login_modal.html'">Place Bets</button>
+            </div>
+
+            <label class="confirm-check">
+                <input type="checkbox" id="confirmCheck"> Please confirm your bets.
+            </label> -->
+        </div>
+    </div>  
+    <div id="footer"></div>
+    <div id="mobile_footer"></div>
+
+
+
+
+<!-- LOAD DATA + RENDER -->
+ <script src="/script.js"></script>
+   <script>
+  const betButtons = document.querySelector('.bet-buttons');
+  const confirmCheck = document.querySelector('.confirm-check');
+  const cancelBtn = document.getElementById('cancelAll');
+
+  betButtons.style.display = 'none';
+  confirmCheck.style.display = 'none';
+ document.addEventListener("click",function(e){
+    if(e.target.classList.contains("odds-box")){
+         betButtons.style.display = "block";
+        confirmCheck.style.display = "block";
+    }
+ })
+
+  cancelBtn.addEventListener('click', () => {
+    betButtons.style.display = 'none';
+    confirmCheck.style.display = 'none';
+  });
+</script>
+
+<script>
+fetch("/data/matches_data.json")
+.then(response => response.json())
+.then(matchData => {
+
+    const container = document.querySelector('.center-section-inplay');
+    const template = document.getElementById('sportsTemplate');
+
+    Object.keys(matchData).forEach(category => {
+
+        const clone = template.content.cloneNode(true);
+        clone.querySelector('.category-name').textContent =category.slice(0);
+        const matchesDiv = clone.querySelector('.matches-container');
+
+        matchData[category].forEach(m => {
+            matchesDiv.innerHTML += `
+            <div class="match-row">
+                <div class="match-info">
+                    <a href="${m.link}">${m.title}</a>
+                    <div class="time-icons">
+                        <span>${m.status}</span>
+                        <img src="${m.icon}" style="width:50px;">
+                        <img src="${m.play_icon}">
+${m.live ? `<img src="${m.live}" class="live-icon">` : ""}
+                        
+                    </div>
+                </div>
+
+                <div class="odds">
+                    <span class="match-code">${m.match_code}</span>
+                    <div class="odds-box blue">${m.odds.blue1}</div>
+                    <div class="odds-box pink">${m.odds.pink1}</div>
+                    <div class="odds-box blue">${m.odds.blue2}</div>
+                    <div class="odds-box pink">${m.odds.pink2}</div>
+                    <div class="odds-box blue">${m.odds.blue3}</div>
+                    <div class="odds-box pink">${m.odds.pink3}</div>
+                </div>
+                  <img src="${m.img}">
+                  
+            </div>
+            `;
+        });
+
+        container.appendChild(clone);
+    });
+
+});
+</script>
+</body>
+</html>

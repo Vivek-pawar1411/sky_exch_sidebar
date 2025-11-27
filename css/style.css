@@ -1,0 +1,24 @@
+/* ===== Base Styles ===== */
+@import url("header.css");
+@import url("footer.css");
+
+/* ===== Core Layout ===== */
+@import url("multimarkets.css");
+@import url("main.css"); /* If this causes recursion, rename this file to style.css instead */
+
+/* ===== Page Specific ===== */
+@import url("cricket_fancy.css");
+@import url("esoccer.css");
+@import url("esoccer_in.css");
+@import url("kabaddi.css");
+@import url("inplay.css");
+@import url("inplay_in.css");
+@import url("soccer.css");
+@import url("soccer_in.css");
+@import url("sportz.css");
+
+/* ===== Components ===== */
+@import url("bet_place.css");
+@import url("login_modal.css");
+@import url("sign_up.css");
+@import url("chat-bot.css");

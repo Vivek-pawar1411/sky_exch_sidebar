@@ -1,0 +1,214 @@
+.kabaddi-img img {
+  width: 100%;
+  height: auto;
+}
+
+.sports-highlights {
+  background-color: #fff;
+  font-size: 13px;
+  width: 100%;
+}
+.center-section{
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+/* Header (yellow bar) */
+.highlight-header {
+  background-color: #ffb80c;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 10px;
+  font-weight: bold;
+  color: #000;
+}
+
+.highlight-header span {
+  flex: 1;
+}
+
+.highlight-header img {
+  height: 20px;
+  cursor: pointer;
+}
+
+.highlight-header select {
+  background-color: #ffb80c;
+  cursor: pointer;
+}
+
+.highlight-header select option {
+  background-color: white;
+  cursor: pointer;
+}
+
+.view-by {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.view-by select {
+  font-size: 12px;
+  border: 1px solid #999;
+  border-radius: 3px;
+  padding: 2px 4px;
+}
+
+/* League title */
+.league-header {
+  background-color: #e6e6e6;
+  border-bottom: 1px solid #ccc;
+  padding: 5px 10px;
+  font-weight: bold;
+  color: #333;
+}
+
+.l-match {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  padding: 8px 10px;
+  flex-wrap: wrap;
+  background-color: #ced5da;
+  height: 25px;
+}
+
+.r-match {
+  display: flex;
+  flex-shrink: 0;
+}
+
+.betting-op {
+  gap: 4px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+
+.op1 { width: 105px; }
+.op2 { width: 55px; }
+.op3 { width: 125px; }
+
+/* Match row */
+.match-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #ccc;
+  padding: 8px 10px;
+  flex-wrap: wrap;
+  background-color: #fff;
+}
+
+.match-row:hover {
+  background-color: #efefef;
+}
+
+/* Left side (match info) */
+.match-info {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  flex: 1;
+}
+
+.match-info a {
+  font-weight: bold;
+  color: #2789ce;
+  text-decoration: none;
+  font-size: 12px;
+  font-family: tahoma, helvetica, sans-serif;
+}
+
+.time-icons {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  color: #555;
+}
+
+.time-icons img {
+  width: 16px;
+  height: 16px;
+}
+
+.match-code {
+  font-size: 12px;
+  font-family: tahoma, helvetica, sans-serif;
+  font-weight: 500;
+  color: #7777;
+  margin-right: 5px;
+}
+
+/* Right side (odds) */
+.odds {
+  display: flex;
+  align-items: center;
+  gap: 1px;
+  flex-shrink: 0;
+      margin-right: 10px;
+}
+
+.odds-box {
+  width: 40px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  border-radius: 3px;
+  color: #000;
+}
+
+.odds-box.blue {
+  background-color: #72bbef;
+  font-size: 11px;
+  cursor: pointer;
+}
+
+.odds-box.pink {
+  background-color: #faa9ba;
+  font-size: 11px;
+  cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .match-row {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .odds {
+    flex-wrap: nowrap;
+  }
+
+  .match-code {
+    display: none !important;
+  }
+
+   .match-row > img:last-child {
+    display: none;
+  }
+
+  .odds-box {
+    width: 100%;
+    min-width: 60px;
+  }
+  .category-name{
+    text-align: center;
+  }
+
+  .l-match,
+  .r-match {
+    display: none !important;
+  }
+}

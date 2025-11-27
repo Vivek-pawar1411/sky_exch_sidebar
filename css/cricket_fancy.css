@@ -1,0 +1,165 @@
+.fancy-bet {
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  font-family:  Tahoma, helvetica, sans-serif;
+}
+
+.fancy-tittle{
+  background-color:  #243a48 !important;
+  color: #fff !important;
+  font-size: 16px !important;
+  padding: 5px !important;
+  text-align: left !important;
+}
+
+.fancy-tittle  img{
+  height: 20px;
+  width: 18px;
+  margin-right: 8px;
+}
+
+
+
+.fancy-bet table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.fancy-bet tr{
+  border-bottom: #080808;
+
+}
+
+.fancy-bet th {
+  color: #080808;
+  padding: 6px;
+}
+
+.fancy-bet td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  color:#080808;
+}
+
+.fancy-bet td.no {
+  background-color: #fda5a5; 
+    text-align: center;
+    cursor: pointer;
+
+}
+
+.fancy-bet td.yes {
+  background-color: #97d4ff; 
+    text-align: center;
+    cursor: pointer;
+
+}
+
+.fancy-bet td.yes:hover { background-color: #a6daff; }
+
+.fancy-bet td.no:hover { background-color: #f2b5b5; }
+.fancy-bet td dt{
+  color:#7e97a7;
+  margin-bottom: 2px;
+}
+
+.fancy-bet td dd{
+  color:#1e1e1e
+}
+.fancy-bet td:last-child {
+  font-size: 13px;
+  color: #555;
+}
+
+.fancy-bet tbody tr:hover {
+  background-color: #f2f6fa;
+}
+
+.fancy-bet small {
+  display: block;
+  color: #666;
+  font-size: 12px;
+  margin-top: 2px;
+}
+
+
+.pin_img {
+    display: flex;
+    background-color: #fff;
+    justify-content: center;
+}
+
+.pin_reload {
+    height: 25px;
+    width: 200px;
+
+}
+
+.match-title {
+    background-color: #fff;
+    display: flex;
+    gap: 6px;
+    position: relative
+}
+
+.match-title span:nth-child(2) {
+    color: #508d0e;
+    font-size: 12px;
+    padding: 7px;
+    font-weight: bold;
+    font-family: tahoma, Arial, Helvetica, sans-serif;
+}
+
+.match-title span:nth-child(1) {
+    min-width: 105px;
+    padding: 7px;
+    font-size: 12px;
+    color: #483b54;
+    font-weight: 700;
+    font-weight: bold;
+    font-family: tahoma, Arial, Helvetica, sans-serif;
+    background-color: #d4e1e3;
+    border-top-right-radius: 20px;
+}
+
+
+.match-title span:nth-child(4) {
+    color: #1e1e1e;
+    padding: 7px;
+    font-size: 12px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-weight: bold;
+    font-family: tahoma, Arial, Helvetica, sans-serif;
+}
+
+
+.match-title span:nth-child(3) {
+    position: absolute;
+    left: 47%;
+    width: 56px;
+    text-align: center;
+    border-radius: 3px;
+    color: #3b5160;
+    font-size: 11px;
+    height: 15px;
+}
+
+#root {
+    margin-top: 4PX;
+    background-color: #bed5d8;
+    padding: 5px;
+    border-radius: 3PX;
+
+}
+
+
+@media screen and (max-width: 600px) {
+  .fancy-bet table td:last-child {
+    display: none;
+  }
+}
+
+

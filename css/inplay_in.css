@@ -1,0 +1,114 @@
+
+
+.schedule {
+    width: 100%;
+    border-collapse: collapse;
+  background: #ffffff;
+}
+
+.schedule th,
+.schedule td {
+    padding: 8px 12px;
+    border-bottom: 1px solid #ddd;
+    font-size: 12px;
+}
+
+tr:hover{
+    background-color:#e0e6e6 ;
+
+}
+
+.schedule th {
+    text-align: left;
+}
+
+.time_t{
+    width: 80px;
+}
+
+td .time_t{
+    font-size: 8px;
+    color:#243a48;
+    font-weight: bold;
+        font-family: tahoma,helvetica,sans-serif;
+          color: #1e1e1e;
+          font-weight: bold;
+}
+
+.sport {
+    color: #1e1e1e;
+}
+
+a {
+    text-decoration: none;
+  color: #2789ce;
+  font-weight: bolder;
+}
+
+.filter-bar {
+    height:40px;
+  background: #e0e6e6;
+  padding: 5px 5px 0;
+    border-bottom: 1px solid #7e97a7;
+      border-radius: 3px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  min-width: 300px;
+  width: 100%;
+  margin-bottom: 10px;
+  overflow-x: auto;
+}
+
+.filter-label {
+  color: #222;
+  font-size: 1.05em;
+  margin-right: 6px;
+  font-family: inherit;
+  font-weight: bold;
+}
+
+.filter-link {
+  color: #243a48;
+  font-size: 12px;
+  text-decoration: none;
+    font-family: tahoma,helvetica,sans-serif;
+
+  margin-right: 0;
+  cursor: pointer;
+}
+
+.filter-label strong {
+        font-family: tahoma,helvetica,sans-serif;
+          color: #1e1e1e;
+          font-weight: bold;
+  font-size: 13px;
+
+
+}
+
+
+.dot {
+  color: #8e9a9f;
+  font-size: 1.15em;
+  margin: 0px;
+}
+
+
+
+
+.filter-btn{
+        background-image: linear-gradient(180deg, #ffffff 0%, #eeeeee 89%);
+    box-shadow: inset 0 2px 0 0 rgba(255, 255, 255, .5);
+    border: 1px solid #bbb;
+    border-radius: 4px;
+    color: #1e1e1e;
+      width:80px;
+  cursor: pointer;
+    line-height: 23px;
+    font-size: 12px;
+    margin-left:auto !important;
+    margin: 7px 5px 10px 0;
+
+}
+

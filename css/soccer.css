@@ -1,0 +1,36 @@
+.bet-buttons {
+  display: flex !important;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 10px;
+}
+
+
+.center-section{
+  overflow-y: scroll;
+  height: 100vh;
+}
+.cancel-all {
+  min-width: 120px;
+  background: #f3f3f3;
+  border: 1px solid #ccc;
+  padding: 8px 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.place-bets {
+    min-width: 120px;
+  background: #000;
+  color: orange;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.confirm-check {
+  margin-top: 10px;
+  font-size: 14px;
+  padding-left: 10px;
+}
