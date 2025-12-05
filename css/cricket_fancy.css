@@ -4,18 +4,28 @@
   font-family:  Tahoma, helvetica, sans-serif;
 }
 
-.fancy-tittle{
-  background-color:  #243a48 !important;
-  color: #fff !important;
-  font-size: 16px !important;
-  padding: 5px !important;
-  text-align: left !important;
+.fancy-tittle_header{
+ height: 25px;
+  background-color:  #243a48 ;
+    display: flex;          
+  align-items: center; 
 }
 
-.fancy-tittle  img{
-  height: 20px;
-  width: 18px;
+.fancy-tittle_header h2{
+  padding-left: 5px;
+  color:#fff;
+    display: flex;          
+  align-items: center; 
+  font: 14px;
+  text-align: left;
+}
+
+
+.fancy-tittle_header  img{
+  height: 17px;
+  width: 17px;
   margin-right: 8px;
+  margin-top:2px;
 }
 
 
@@ -103,13 +113,7 @@
     position: relative
 }
 
-.match-title span:nth-child(2) {
-    color: #508d0e;
-    font-size: 12px;
-    padding: 7px;
-    font-weight: bold;
-    font-family: tahoma, Arial, Helvetica, sans-serif;
-}
+
 
 .match-title span:nth-child(1) {
     min-width: 105px;
@@ -160,6 +164,8 @@
   .fancy-bet table td:last-child {
     display: none;
   }
+
+   
 }
 
 

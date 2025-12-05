@@ -118,9 +118,9 @@ document.addEventListener("DOMContentLoaded", () => {
         row.className = "table-match-odds-row";
 
         row.innerHTML = `
-          <div class="match-odds-name">${m.team}</div>
-          ${m.back.map(v => `<div class='odds-back'>${v.price}<br>${v.volume}</div>`).join("")}
-          ${m.lay.map(v => `<div class='odds-lay'>${v.price}<br>${v.volume}</div>`).join("")}
+          <div class="match-odds-name"> <img src="${m.graph}">${m.team}</div>
+          ${m.back.map(v => `<div class='odds-back'><strong>${v.price} </strong><strong>${v.volume} </strong></div>`).join("")}
+          ${m.lay.map(v => `<div class='odds-lay'><strong>${v.price} </strong><strong>${v.volume} </strong></div>`).join("")}
         `;
 
         matchDiv.appendChild(row);

@@ -73,6 +73,7 @@ a {
   font-size: 12px;
   text-decoration: none;
     font-family: tahoma,helvetica,sans-serif;
+    font-weight: lighter;
 
   margin-right: 0;
   cursor: pointer;
@@ -81,8 +82,8 @@ a {
 .filter-label strong {
         font-family: tahoma,helvetica,sans-serif;
           color: #1e1e1e;
-          font-weight: bold;
-  font-size: 13px;
+          font-weight: 700;
+  font-size: 12px;
 
 
 }

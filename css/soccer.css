@@ -1,17 +1,19 @@
 .bet-buttons {
-  display: flex !important;
-  justify-content: space-around;
-  align-items: center;
-  margin-top: 10px;
-}
 
+  margin-top: 10px;
+    border-top: 1px solid #e0e6e6;
+      padding: 15px  0 15px 10px ;
+    border-bottom: 1px solid #e0e6e6;
+}
 
 .center-section{
   overflow-y: scroll;
   height: 100vh;
 }
+
+
 .cancel-all {
-  min-width: 120px;
+  min-width: 130px;
   background: #f3f3f3;
   border: 1px solid #ccc;
   padding: 8px 14px;
@@ -20,7 +22,7 @@
   font-weight: bold;
 }
 .place-bets {
-    min-width: 120px;
+    min-width: 130px;
   background: #000;
   color: orange;
   border: none;
@@ -30,7 +32,30 @@
   font-weight: bold;
 }
 .confirm-check {
-  margin-top: 10px;
+  margin: 10px 10px;
   font-size: 14px;
   padding-left: 10px;
+}
+
+
+.pagi{
+  text-align: center;
+  padding: 6px 6px;
+  font-size: 12px;  
+}
+
+.pagi span:nth-child(2) {
+    color:#2789ce;
+   font-family: Tahoma, Helvetica, sans-serif;
+    font-weight: 500;
+}
+.pagi span:nth-child(1) {
+    color:#bac1ca;
+    font-weight: 500;
+    cursor: not-allowed;
+}
+
+.pagi span:nth-child(2):hover{
+  cursor: pointer;
+  text-decoration: underline;
 }

@@ -29,27 +29,6 @@
     font-weight: bold;
     border-radius: 6px 6px 0 0;
 }
-
-.fancy-bet {
-    display: flex;
-}
-
-.fancy-bet span {
-    margin-left: 10px;
-    margin-right: 10px;
-    font-size: 12px;
-}
-
-.fancy-bet p {
-    width: 56px;
-    background-color: #bed5d8;
-    text-align: center;
-    border-radius: 3px;
-    color: #3b5160;
-    font-size: 11px;
-    height: 15px;
-}
-
 .esoccer-tabs {
     display: flex;
     background-color: #fdbb77;
@@ -111,7 +90,6 @@
     color: #508d0e;
     font-size: 12px;
     padding: 7px;
-    font-weight: bold;
     font-family: tahoma, Arial, Helvetica, sans-serif;
 }
 
@@ -131,7 +109,7 @@
 .match-title span:nth-child(4) {
     color: #1e1e1e;
     padding: 7px;
-    font-size: 12px;
+    font-size: 14px;
     position: absolute;
     top: 0;
     right: 0;
@@ -152,13 +130,18 @@
 }
 
 #root {
-    margin-top: 4PX;
+    margin-top: 6px;
     background-color: #bed5d8;
-    padding: 5px;
-    border-radius: 3PX;
+    padding: 2px;
+    border-radius: 3px;
 
 }
 
+.match-title img {
+    margin-right: 6px;
+        margin-bottom: -3px;
+
+}
 .table-match-odds {
       display: grid;
     border-radius: 5px;
@@ -187,17 +170,27 @@
 .table-match-odds-row > div:nth-child(7) { grid-area: lay3; }
 
 .match-odds-name {
-  background-color: #faf9f9;
+  background-color: #ffffff;
   color: #000000;
       font-size: 12px;
                 font-family: Tahoma, Helvetica, sans-serif;
-
   display: flex;
-  font-weight: 400;
+  font-weight: bold;
   align-items: center;
   padding-left: 10px;
 }
 
+
+.match-odds-name img{
+    height: 20px;
+    width: 25px;
+    margin-right: 6px;
+        margin-bottom: -3px;
+}
+
+.odds-back strong{
+    padding-right: 10px;
+}
 
 .table-match-odds-row :hover{
     background-color: #e0dfdf;
@@ -212,17 +205,28 @@
   padding: 5px;
   cursor: pointer;
   border-radius: 2px;
+  flex-direction: column;
 }
 
 .odds-lay {
     margin: 1px;
   background-color: #72bbef;
   display: flex;
+  color: #080808;
   align-items: center;
   justify-content: center;
   padding: 5px;
   cursor: pointer;
   border-radius: 2px;
+  flex-direction: column;
+}
+
+.odds-lay strong:nth-child(2) {
+    font-weight: lighter;
+}
+
+.odds-back strong:nth-child(2) {
+    font-weight: lighter;
 }
 
 .odds-back:hover { background-color: #f77f9c; }
@@ -230,10 +234,8 @@
 
 .match-odds-name-selections,.odds-lay-percent,.odds-back-percent{
     padding-bottom: 10px;
-    font-weight: 600;
     color:#7e97a7;
     display: flex;
-    font-size: 12px;
     align-items: flex-end;
 }
 

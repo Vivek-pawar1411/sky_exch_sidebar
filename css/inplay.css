@@ -15,6 +15,7 @@
 }
 
 .center-section-inplay {
+    margin-left: 10px;
     width: 73%;
     height: auto;
     background-color: #eeeeee;
@@ -22,20 +23,23 @@
     overflow-y: scroll;
 }
 
-.title{
+.title_to{
+    /* position:fixed; */
     width: 100%;
-    height: 35px;
+    height: 30px;
         display: flex;
         align-items: center;
+        margin-bottom: 8px;
 
 }
 
-.title ul{
+
+.title_to ul{
     display: flex;
     flex-direction: row;
 }
 
-.title li{
+.title_to li{
     display: flex;
     font-size: 13px;
     font-weight: bold;
@@ -52,7 +56,7 @@
         cursor: pointer;
 }
 
-.title li a {
+.title_to li a {
   display: block;
   width: 100%;
   height: 100%;
@@ -63,17 +67,17 @@
 }
 
 
-.title li:hover {
+.title_to li:hover {
   text-decoration: underline; 
 }
 
-.title li.active{
+.title_to li.active{
     background: #3b5160;
     color :#ffffff
 }
 
 
-.title li.active a{
+.title_to li.active a{
     color :#ffffff
 }
 
@@ -102,13 +106,13 @@ font-family: tahoma, Helvetica, sans-serif;
 @media screen and (max-width:600px) {
 
 
-    .title li{
+    ._.title_to li{
         min-width: 120px;
         border-radius: 6px;
 
     }
 
-    .title{
+    ._.title_to{
    
         display: flex;
         justify-content: center;

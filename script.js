@@ -1,95 +1,3 @@
-
-  
-//     async function loadHTML(id, file) {
-//       const el = document.getElementById(id);
-//       const res = await fetch(file);
-//       const html = await res.text();
-
-//       el.innerHTML = html;
-//     }
-//     async function initPage() {
-//       await loadHTML("header", "/component/header.html");
-//       await loadFooter();
-//        await mobile_footer();
-
-//       window.toggleSidebar = function () {
-//         const sidebar = document.getElementById("sidebar");
-//         if (sidebar) {
-//           sidebar.classList.toggle("active");
-//         } else {
-//           console.warn("Sidebar not found in DOM.");
-//         }
-//       };
-
-//       const currentPage = window.location.pathname;
-//   const navLinks = document.querySelectorAll('.navbar a'); 
-
-//   navLinks.forEach(link => {
-//     if (link.getAttribute('href') === currentPage) {
-//       link.classList.add('active'); 
-//     }
-//   });
-//     }
-
-    
-//     async function loadFooter() {
-//       const res = await fetch("/component/footer.html");
-//       const html = await res.text();
-//       const parser = new DOMParser();
-//       const doc = parser.parseFromString(html, "text/html");
-//       const powerPara = doc.querySelector(".power-para");
-//       if (powerPara) powerPara.remove();
-//       const footerContent = doc.querySelector("footer") || doc.body;
-//       document.getElementById("footer").innerHTML = footerContent.innerHTML;
-//     }
-    
-
-//       const tabs = document.querySelectorAll(".left-section li");
-//     if (tabs.length) {
-//       tabs.forEach((tab) => {
-//         tab.addEventListener("click", () => {
-//           tabs.forEach((t) => t.classList.remove("active"));
-//           tab.classList.add("active");
-//         });
-//       });
-//     } else {
-//       console.warn("No .left-section li found for active tab toggle.");
-//     }
-
-//     // Load chat widget HTML
-// fetch("/component/chat-bot.html")
-//     .then(res => res.text())
-//     .then(html => {
-//         document.body.insertAdjacentHTML("beforeend", html);
-
-//         const chatWidget = document.getElementById("chatWidget");
-//         const chaticon=document.querySelector(".chat-icon");
-
-//         // Open on chatbot icon click
-//         document.querySelector(".chat-icon")?.addEventListener("click", () => {
-//             chatWidget.style.display = "block";
-//             chaticon.style.display="none";
-//         });
-
-//         // Close modal
-//         document.getElementById("closeChat").addEventListener("click", () => {
-//             chatWidget.style.display = "none";
-//             chaticon.style.display="block";
-
-//         });
-//     });
-
-//     async function mobile_footer() {
-//       const  footer_mob= await fetch("/component/mobile_footer.html");
-//       const html=await footer_mob.text();
-//       document.getElementById("mobile_footer").innerHTML=html;
-      
-//     }
-//     document.addEventListener("DOMContentLoaded", initPage);
-  
-// -----------------------------
-// Load HTML into a container
-// -----------------------------
 async function loadHTML(id, file) {
   const el = document.getElementById(id);
   const res = await fetch(file);
@@ -97,9 +5,7 @@ async function loadHTML(id, file) {
   el.innerHTML = html;
 }
 
-// -----------------------------
 // Initialize page
-// -----------------------------
 async function initPage() {
   // Load header first
   await loadHTML("header", "/component/header.html");
@@ -108,68 +14,68 @@ async function initPage() {
   await loadFooter();
   await mobile_footer();
 
-  // Sidebar toggle function
-  window.toggleSidebar = function () {
+  // Event Delegation for multiple dynamic actions
+  document.addEventListener("click", function (e) {
+    const chatWidget = document.getElementById("chatWidget");
     const sidebar = document.getElementById("sidebar");
-    if (sidebar) sidebar.classList.toggle("active");
-    else console.warn("Sidebar not found in DOM.");
-  };
 
-  // -----------------------------
-  // Highlight current navbar item
-  // -----------------------------
-  const currentPage = window.location.pathname;
-  const navLinks = document.querySelectorAll('.navbar a.nav-link'); // only main links
+    // Chat icon click
+    if (e.target.classList.contains("chat-icon") && chatWidget) {
+      chatWidget.style.display = "block";
+      e.target.style.display = "none";
+    }
 
-  navLinks.forEach(link => {
-    if (link.getAttribute('href') === currentPage) {
-      link.classList.add('active'); // add active class
+    // Close chat modal
+    if (e.target.id === "closeChat" && chatWidget) {
+      chatWidget.style.display = "none";
+      const chaticon = document.querySelector(".chat-icon");
+      if (chaticon) chaticon.style.display = "block";
+    }
+
+    // Sidebar toggle (mobile)
+    if (e.target.id === "sidebarToggle" && sidebar) {
+      sidebar.classList.toggle("active");
+    }
+
+    // Left-section tabs
+    if (e.target.closest(".left-section li")) {
+      const tabs = document.querySelectorAll(".left-section li");
+      tabs.forEach((t) => t.classList.remove("active"));
+      e.target.closest("li").classList.add("active");
     }
   });
 
-  // -----------------------------
-  // Left section tabs toggle
-  // -----------------------------
-  const tabs = document.querySelectorAll(".left-section li");
-  if (tabs.length) {
-    tabs.forEach((tab) => {
-      tab.addEventListener("click", () => {
-        tabs.forEach((t) => t.classList.remove("active"));
-        tab.classList.add("active");
-      });
-    });
-  } else {
-    console.warn("No .left-section li found for active tab toggle.");
-  }
+// Highlight navbar with HOME as default active
+const currentPage = window.location.pathname.split('/').pop();
+const navLinks = document.querySelectorAll('.navbar a.nav-link');
 
-  // -----------------------------
+let matched = false;
+
+// Match current page
+navLinks.forEach(link => {
+  const linkPage = link.getAttribute('href').split('/').pop();
+  if (linkPage === currentPage) {
+    link.classList.add('active');
+    matched = true;
+  }
+});
+
+// If no match → set Home active
+if (!matched) {
+  const homeLink = document.querySelector('.navbar a[href="/index.html"], .navbar a[href="index.html"]');
+  if (homeLink) homeLink.classList.add("active");
+}
+
+
   // Load chat widget
-  // -----------------------------
   fetch("/component/chat-bot.html")
     .then(res => res.text())
     .then(html => {
       document.body.insertAdjacentHTML("beforeend", html);
-
-      const chatWidget = document.getElementById("chatWidget");
-      const chaticon = document.querySelector(".chat-icon");
-
-      // Open on chatbot icon click
-      chaticon?.addEventListener("click", () => {
-        chatWidget.style.display = "block";
-        chaticon.style.display = "none";
-      });
-
-      // Close chat modal
-      document.getElementById("closeChat")?.addEventListener("click", () => {
-        chatWidget.style.display = "none";
-        chaticon.style.display = "block";
-      });
     });
 }
 
-// -----------------------------
 // Load footer HTML
-// -----------------------------
 async function loadFooter() {
   const res = await fetch("/component/footer.html");
   const html = await res.text();
@@ -181,16 +87,13 @@ async function loadFooter() {
   document.getElementById("footer").innerHTML = footerContent.innerHTML;
 }
 
-// -----------------------------
 // Load mobile footer HTML
-// -----------------------------
 async function mobile_footer() {
   const res = await fetch("/component/mobile_footer.html");
   const html = await res.text();
   document.getElementById("mobile_footer").innerHTML = html;
 }
 
-// -----------------------------
 // Run initPage on DOMContentLoaded
-// -----------------------------
 document.addEventListener("DOMContentLoaded", initPage);
+

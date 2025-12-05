@@ -69,7 +69,267 @@
         "blue3": 5,
         "pink3": 1
       }
+    }, {
+      "title": "🟢 India A (Rohit) v India B (Virat)",
+      "status": "In Play",
+      "icon": "/image/c_b.png",
+      "play_icon": "/image/p-icon.png",
+      "live": "/image/live-icon.png",
+      "link": "/pages/cricket_fancy.html",
+      "match_code": "IND0",
+      "img": "/image/pin_start.png",
+      "odds": {
+        "blue1": 2,
+        "pink1": 3,
+        "blue2": 4,
+        "pink2": 5,
+        "blue3": 3,
+        "pink3": 2
+      }
+    },
+     {
+      "title": "🟢 Aston Villa (Mateo) v River Plate (Bruno)",
+      "status": "In Play",
+      "icon": "/image/e-soccer.png",
+      "play_icon": "/image/p-icon.png",
+      "live": "/image/live-icon.png",
+      "link": "/pages/cricket_fancy.html",
+      "match_code": "PTE0",
+      "img": "/image/pin_start.png",
+      "odds": {
+        "blue1": 3,
+        "pink1": 4,
+        "blue2": 7,
+        "pink2": 8,
+        "blue3": 5,
+        "pink3": 1
+      }
+    },
+    {
+      "title": "🟢 Aston Apache v River Bruno",
+      "status": "In Play",
+      "icon": "/image/e-soccer.png",
+      "play_icon": "/image/p-icon.png",
+      "link": "/pages/cricket_fancy.html",
+      "match_code": "PTE0",
+      "img": "/image/pin_start.png",
+      "odds": {
+        "blue1": 3,
+        "pink1": 4,
+        "blue2": "--",
+        "pink2": 8,
+        "blue3": "--",
+        "pink3": 1
+      }
+    },
+    {
+      "title": "🟢 Sao Paulo (Flash) v San Lorenzo (Andrew)",
+      "status": "In Play",
+      "icon": "/image/c_b.png",
+      "play_icon": "/image/p-icon.png",
+      "link": "/pages/cricket_fancy.html",
+      "match_code": "PTE0",
+      "img": "/image/pin_start.png",
+      "odds": {
+        "blue1": "--",
+        "pink1": "2",
+        "blue2": "--",
+        "pink2": "7",
+        "blue3": "--",
+        "pink3": "--"
+      }
+    },
+    {
+      "title": "🟢 River Plate (Bruno) v Bolivar (Oliver)",
+      "status": "In Play",
+      "icon": "/image/e-soccer.png",
+      "play_icon": "/image/p-icon.png",
+      "live": "/image/live-icon.png",
+      "link": "/pages/cricket_fancy.html",
+      "match_code": "PTE0",
+      "img": "/image/pin_start.png",
+      "odds": {
+        "blue1": 3,
+        "pink1": 4,
+        "blue2": 7,
+        "pink2": 8,
+        "blue3": 5,
+        "pink3": 1
+      }
+    }, {
+      "title": "🟢 India A (Rohit) v India B (Virat)",
+      "status": "In Play",
+      "icon": "/image/c_b.png",
+      "play_icon": "/image/p-icon.png",
+      "live": "/image/live-icon.png",
+      "link": "/pages/cricket_fancy.html",
+      "match_code": "IND0",
+      "img": "/image/pin_start.png",
+      "odds": {
+        "blue1": 2,
+        "pink1": 3,
+        "blue2": 4,
+        "pink2": 5,
+        "blue3": 3,
+        "pink3": 2
+      }
+    },
+    {
+      "title": "🟢 Mumbai Indians v Chennai Super Kings",
+      "status": "In Play",
+      "icon": "/image/e-soccer.png",
+      "play_icon": "/image/p-icon.png",
+      "link": "/pages/cricket_fancy.html",
+      "match_code": "IND1",
+      "img": "/image/pin_start.png",
+      "odds": {
+        "blue1": 3,
+        "pink1": 2,
+        "blue2": 5,
+        "pink2": 4,
+        "blue3": "--",
+        "pink3": 1
+      }
+    },
+    {
+      "title": "🟢 Delhi Capitals (Shreyas) v Royal Challengers Bangalore (ABD)",
+      "status": "In Play",
+      "icon": "/image/c_b.png",
+      "play_icon": "/image/p-icon.png",
+      "link": "/pages/cricket_fancy.html",
+      "match_code": "IND2",
+      "img": "/image/pin_start.png",
+      "odds": {
+        "blue1": 4,
+        "pink1": 3,
+        "blue2": 6,
+        "pink2": 5,
+        "blue3": "--",
+        "pink3": 2
+      }
+    },
+    {
+      "title": "🟢 Kolkata Knight Riders v Sunrisers Hyderabad",
+      "status": "In Play",
+      "icon": "/image/e-soccer.png",
+      "play_icon": "/image/p-icon.png",
+      "live": "/image/live-icon.png",
+      "link": "/pages/cricket_fancy.html",
+      "match_code": "IND3",
+      "img": "/image/pin_start.png",
+      "odds": {
+        "blue1": 3,
+        "pink1": 4,
+        "blue2": 5,
+        "pink2": 6,
+        "blue3": 2,
+        "pink3": 1
+      }
+    },
+    {
+      "title": "🟢 India U19 (Shubman) v India Legends (Yuvraj)",
+      "status": "In Play",
+      "icon": "/image/c_b.png",
+      "play_icon": "/image/p-icon.png",
+      "link": "/pages/cricket_fancy.html",
+      "match_code": "IND4",
+      "img": "/image/pin_start.png",
+      "odds": {
+        "blue1": 2,
+        "pink1": 3,
+        "blue2": 4,
+        "pink2": 5,
+        "blue3": 1,
+        "pink3": 2
+      }
+    },
+    {
+      "title": "🟢 Rajasthan Royals v Punjab Kings",
+      "status": "In Play",
+      "icon": "/image/e-soccer.png",
+      "play_icon": "/image/p-icon.png",
+      "link": "/pages/cricket_fancy.html",
+      "match_code": "IND5",
+      "img": "/image/pin_start.png",
+      "odds": {
+        "blue1": 3,
+        "pink1": 4,
+        "blue2": "--",
+        "pink2": 6,
+        "blue3": 2,
+        "pink3": 1
+      }
+    },
+    {
+      "title": "🟢 India A (Jadeja) v India B (Bumrah)",
+      "status": "In Play",
+      "icon": "/image/c_b.png",
+      "play_icon": "/image/p-icon.png",
+      "link": "/pages/cricket_fancy.html",
+      "match_code": "IND6",
+      "img": "/image/pin_start.png",
+      "odds": {
+        "blue1": 4,
+        "pink1": 3,
+        "blue2": 5,
+        "pink2": 6,
+        "blue3": "--",
+        "pink3": 2
+      }
+    },
+    {
+      "title": "🟢 India Women v India U19 Women",
+      "status": "In Play",
+      "icon": "/image/e-soccer.png",
+      "play_icon": "/image/p-icon.png",
+      "link": "/pages/cricket_fancy.html",
+      "match_code": "IND7",
+      "img": "/image/pin_start.png",
+      "odds": {
+        "blue1": "--",
+        "pink1": 3,
+        "blue2": 4,
+        "pink2": 5,
+        "blue3": 2,
+        "pink3": 1
+      }
+    },
+    {
+      "title": "🟢 India Legends v World Legends",
+      "status": "In Play",
+      "icon": "/image/c_b.png",
+      "play_icon": "/image/p-icon.png",
+      "link": "/pages/cricket_fancy.html",
+      "match_code": "IND8",
+      "img": "/image/pin_start.png",
+      "odds": {
+        "blue1": 3,
+        "pink1": 4,
+        "blue2": 5,
+        "pink2": 6,
+        "blue3": 2,
+        "pink3": 1
+      }
+    },
+    {
+      "title": "🟢 India B (Pant) v India A (Dhoni)",
+      "status": "In Play",
+      "icon": "/image/e-soccer.png",
+      "play_icon": "/image/p-icon.png",
+      "live": "/image/live-icon.png",
+      "link": "/pages/cricket_fancy.html",
+      "match_code": "IND9",
+      "img": "/image/pin_start.png",
+      "odds": {
+        "blue1": 2,
+        "pink1": 3,
+        "blue2": 4,
+        "pink2": 5,
+        "blue3": 3,
+        "pink3": 2
+      }
     }
+  
   ],
   "Soccer": [
     {

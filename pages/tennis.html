@@ -11,13 +11,15 @@
   <link rel="stylesheet" href="/css/kabaddi.css">
   <link rel="stylesheet" href="/css/footer.css">
        <link rel="stylesheet" href="/css/chat-bot.css"> 
+              <link rel="stylesheet" href="/css/soccer.css"> 
+
 
 </head>
 
 <body>
 
   <header id="header"></header>
-  <main>
+  
     <div class="container">
       <div class="left-section">
         <ul>
@@ -96,16 +98,45 @@
           </div>
         </div>
                 <div id="footer"></div>
+             <div id="mobile_footer"></div>
+
       </div>
       <div class="right-section">
                 <div class="bet-title">Bet Slip <img src="/image/m_s.png" alt=""></div>
-        <p>Click on the odds to add selections to the betslip.</p>
-                <img src="/image/text.png" alt="" class="chat-icon">
+                <p>Click on the odds to add selections to the betslip.</p>
+                        <img src="/image/text.png" alt="" class="chat-icon">
 
+                 <div class="bet-buttons"  style="margin-top: 20px;padding: 5px; display: flex;">
+        <button class="cancel-all" id="cancelAll">Cancel All</button>
+        <button class="place-bets" id="placeBets"  onclick="window.location.href='/pages/login_modal.html'">Place Bets</button>
       </div>
+      <label class="confirm-check">
+        <input type="checkbox" id="confirmCheck"> Please confirm your bets.
+      </label> 
+    </div>
 
-  </main>
-  <script src="/script.js"> </script>
+    </main>
+    <script src="/script.js" defer> </script>
+    <script src="/match.js" defer></script>
+    <script>
+        const betButtons=document.querySelector('.bet-buttons');
+        const confirmCheck=document.querySelector('.confirm-check');
+        const cancelBtn=document.getElementById('cancelAll');
+
+        betButtons.style.display="none";
+        confirmCheck.style.display="none";
+
+        document.addEventListener("click",function(e){
+    if(e.target.classList.contains("odds-box")){
+         betButtons.style.display = "block";
+        confirmCheck.style.display = "block";
+    }
+});
+
+  cancelBtn.addEventListener('click', () => {
+    betButtons.style.display = 'none';
+    confirmCheck.style.display = 'none';
+  });
+    </script>
 </body>
-
 </html>

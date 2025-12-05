@@ -85,6 +85,7 @@
     }
   ],  "matchodds": [
     {
+      "graph":"/image/graph.png",
       "team": "Bangladesh",
       "back": [
         { "price": "69", "volume": "131k" },
@@ -98,6 +99,7 @@
       ]
     },
     {
+      "graph":"/image/graph.png",
       "team": "Ireland",
       "back": [
         { "price": "42", "volume": "2" },
@@ -111,6 +113,7 @@
       ]
     },
     {
+     "graph":"/image/graph.png",
       "team": "the draw",
       "back": [
         { "price": "36", "volume": "465" },

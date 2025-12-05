@@ -6,6 +6,8 @@
     "play_icon": "/image/p-icon.png",
     "link": "/pages/all_in_one.html",
     "match_code": "FT11",
+          "img": "/image/pin_start.png",
+
     "odds": { "blue1": 2, "pink1": 3, "blue2": 4, "pink2": 5, "blue3": 6, "pink3": 1 }
   },
   {
@@ -15,6 +17,8 @@
     "play_icon": "/image/p-icon.png",
     "link": "/pages/cricket_fancy.html",
     "match_code": "CR12",
+          "img": "/image/pin_start.png",
+
     "odds": { "blue1": "--", "pink1": "--", "blue2": "--", "pink2": "--", "blue3": "--", "pink3": "--" }
   },
   {
@@ -24,6 +28,8 @@
     "play_icon": "/image/p-icon.png",
     "link": "/pages/esoccer_matchodds.html",
     "match_code": "ES13",
+          "img": "/image/pin_start.png",
+
     "odds": { "blue1": 3, "pink1": 4, "blue2": 7, "pink2": 8, "blue3": 5, "pink3": 2 }
   },
   {
@@ -33,6 +39,8 @@
     "play_icon": "/image/p-icon.png",
     "link": "/pages/soccer_bookmaker.html",
     "match_code": "SC14",
+          "img": "/image/pin_start.png",
+
     "odds": { "blue1": 1.9, "pink1": 2.1, "blue2": 3.3, "pink2": 3.8, "blue3": 6, "pink3": 1 }
   },
   {
@@ -42,6 +50,8 @@
     "play_icon": "/image/p-icon.png",
     "link": "/pages/all_in_one.html",
     "match_code": "CR15",
+          "img": "/image/pin_start.png",
+
        "odds": { "blue1": "--", "pink1": "--", "blue2": "--", "pink2": "--", "blue3": "--", "pink3": "--" }
   },
   {
@@ -51,6 +61,8 @@
     "play_icon": "/image/p-icon.png",
     "link": "/pages/esoccer_matchodds.html",
     "match_code": "ES16",
+          "img": "/image/pin_start.png",
+
     "odds": { "blue1": 2, "pink1": 2, "blue2": 4, "pink2": 4, "blue3": 6, "pink3": 1 }
   },
   {
@@ -60,6 +72,8 @@
     "play_icon": "/image/p-icon.png",
     "link": "/pages/cricket_fancy.html",
     "match_code": "CR17",
+          "img": "/image/pin_start.png",
+
     "odds": { "blue1": 1.7, "pink1": 1.8, "blue2": 2.9, "pink2": 3.0, "blue3": 4.2, "pink3": 5.1 }
   },
   {
@@ -69,6 +83,8 @@
     "play_icon": "/image/p-icon.png",
     "link": "/pages/soccer_bookmaker.html",
     "match_code": "FT18",
+          "img": "/image/pin_start.png",
+
     "odds": { "blue1": 4, "pink1": 5, "blue2": 8, "pink2": 9, "blue3": 11, "pink3": 1 }
   },
   {
@@ -78,6 +94,8 @@
     "play_icon": "/image/p-icon.png",
     "link": "/pages/all_in_one.html",
     "match_code": "ES19",
+          "img": "/image/pin_start.png",
+
     "odds": { "blue1": 3, "pink1": 3, "blue2": 6, "pink2": 7, "blue3": 10, "pink3": 2 }
   },
   {
@@ -87,6 +105,8 @@
     "play_icon": "/image/p-icon.png",
     "link": "/pages/cricket_fancy.html",
     "match_code": "CR20",
+          "img": "/image/pin_start.png",
+
     "odds": { "blue1": "--", "pink1": "--", "blue2": "--", "pink2": "--", "blue3": "--", "pink3": "--" }
   },
   {
@@ -96,6 +116,8 @@
     "play_icon": "/image/p-icon.png",
     "link": "/pages/soccer_bookmaker.html",
     "match_code": "SC21",
+          "img": "/image/pin_start.png",
+
     "odds": { "blue1": 2.2, "pink1": 2.4, "blue2": 3.8, "pink2": 4.1, "blue3": 5.9, "pink3": 1 }
   },
   {
@@ -105,6 +127,8 @@
     "play_icon": "/image/p-icon.png",
     "link": "/pages/esoccer_matchodds.html",
     "match_code": "ES22",
+          "img": "/image/pin_start.png",
+
     "odds": { "blue1": 1.8, "pink1": 2.1, "blue2": 3.5, "pink2": 3.9, "blue3": 6.5, "pink3": 1 }
   },
   {
@@ -114,6 +138,8 @@
     "play_icon": "/image/p-icon.png",
     "link": "/pages/all_in_one.html",
     "match_code": "CR23",
+          "img": "/image/pin_start.png",
+
     "odds": { "blue1": 1.6, "pink1": 1.7, "blue2": 2.8, "pink2": 3.1, "blue3": 5, "pink3": 6 }
   },
   {
@@ -123,6 +149,8 @@
     "play_icon": "/image/p-icon.png",
     "link": "/pages/soccer_bookmaker.html",
     "match_code": "FT24",
+          "img": "/image/pin_start.png",
+
     "odds": { "blue1": 3, "pink1": 3, "blue2": 6, "pink2": 6, "blue3": 9, "pink3": 1 }
   },
   {
@@ -131,8 +159,141 @@
     "icon": "/image/e-soccer.png",
     "play_icon": "/image/p-icon.png",
     "link": "/pages/all_in_one.html",
+          "img": "/image/pin_start.png",
+
     "match_code": "ES25",
     "odds": { "blue1": 2, "pink1": 3, "blue2": 5, "pink2": 6, "blue3": 8, "pink3": 2 }
+  },
+  {
+    "title": "🟢 West Indies v Bangladesh",
+    "status": "Upcoming",
+    "icon": "/image/e-soccer.png",
+    "play_icon": "/image/p-icon.png",
+    "link": "/pages/cricket_fancy.html",
+          "img": "/image/pin_start.png",
+
+    "match_code": "CR26",
+    "odds": { "blue1": "--", "pink1": "--", "blue2": "--", "pink2": "--", "blue3": "--", "pink3": "--" }
+  },
+  {
+    "title": "🟢 Tottenham Hotspur v Everton",
+    "status": "In Play",
+    "icon": "/image/e-soccer.png",
+    "play_icon": "/image/p-icon.png",
+    "link": "/pages/soccer_bookmaker.html",
+          "img": "/image/pin_start.png",
+
+    "match_code": "FT27",
+    "odds": { "blue1": 2.5, "pink1": 2.7, "blue2": 4.5, "pink2": 4.8, "blue3": 7, "pink3": 1 }
+  },
+     {
+      "title": "🟢 Rajasthan Royals v Punjab Kings",
+      "status": "In Play",
+      "icon": "/image/e-soccer.png",
+      "play_icon": "/image/p-icon.png",
+      "link": "/pages/cricket_fancy.html",
+      "match_code": "IND5",
+      "img": "/image/pin_start.png",
+      "odds": {
+        "blue1": 3,
+        "pink1": 4,
+        "blue2": "--",
+        "pink2": 6,
+        "blue3": 2,
+        "pink3": 1
+      }
+    },
+    {
+      "title": "🟢 India A (Jadeja) v India B (Bumrah)",
+      "status": "In Play",
+      "icon": "/image/c_b.png",
+      "play_icon": "/image/p-icon.png",
+      "link": "/pages/cricket_fancy.html",
+      "match_code": "IND6",
+      "img": "/image/pin_start.png",
+      "odds": {
+        "blue1": 4,
+        "pink1": 3,
+        "blue2": 5,
+        "pink2": 6,
+        "blue3": "--",
+        "pink3": 2
+      }
+    },
+    {
+      "title": "🟢 India Women v India U19 Women",
+      "status": "In Play",
+      "icon": "/image/e-soccer.png",
+      "play_icon": "/image/p-icon.png",
+      "link": "/pages/cricket_fancy.html",
+      "match_code": "IND7",
+      "img": "/image/pin_start.png",
+      "odds": {
+        "blue1": "--",
+        "pink1": 3,
+        "blue2": 4,
+        "pink2": 5,
+        "blue3": 2,
+        "pink3": 1
+      }
+    },
+    {
+      "title": "🟢 India Legends v World Legends",
+      "status": "In Play",
+      "icon": "/image/c_b.png",
+      "play_icon": "/image/p-icon.png",
+      "link": "/pages/cricket_fancy.html",
+      "match_code": "IND8",
+      "img": "/image/pin_start.png",
+      "odds": {
+        "blue1": 3,
+        "pink1": 4,
+        "blue2": 5,
+        "pink2": 6,
+        "blue3": 2,
+        "pink3": 1
+      }
+    },
+    {
+      "title": "🟢 India B (Pant) v India A (Dhoni)",
+      "status": "In Play",
+      "icon": "/image/e-soccer.png",
+      "play_icon": "/image/p-icon.png",
+      "live": "/image/live-icon.png",
+      "link": "/pages/cricket_fancy.html",
+      "match_code": "IND9",
+      "img": "/image/pin_start.png",
+      
+      "odds": {
+        "blue1": 2,
+        "pink1": 3,
+        "blue2": 4,
+        "pink2": 5,
+        "blue3": 3,
+        "pink3": 2
+      }
+    },
+  {
+    "title": "🟢 Mexico (Hernandez) v USA (Pulisic)",
+    "status": "In Play",
+    "icon": "/image/e-soccer.png",
+    "play_icon": "/image/p-icon.png",
+    "link": "/pages/esoccer_matchodds.html",
+          "img": "/image/pin_start.png",
+
+    "match_code": "ES28",
+    "odds": { "blue1": 1.9, "pink1": 2.0, "blue2": 3.2, "pink2": 3.5, "blue3": 5.5, "pink3": 1 }
+  },
+  {
+    "title": "🟢 Zimbabwe v Namibia",
+    "status": "Upcoming",
+    "icon": "/image/e-soccer.png",
+    "play_icon": "/image/p-icon.png",
+    "link": "/pages/all_in_one.html",
+          "img": "/image/pin_start.png",
+
+    "match_code": "CR29",
+    "odds": { "blue1": "--", "pink1": "--", "blue2": "--", "pink2": "--", "blue3": "--", "pink3": "--" }
   }
 ]
 }

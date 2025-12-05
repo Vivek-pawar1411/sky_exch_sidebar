@@ -2,7 +2,8 @@
 font-size: 12px;}
 
 .bk-wrapper {
-  max-width: 900px;
+  width: 100%;
+  /* max-width: 900px; */
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
   border: 1px solid rgba(0, 0, 0, 0.06);
 }
@@ -12,7 +13,7 @@ font-size: 12px;}
 }
 
 .bk-header {
-  height: 35px;
+  height: 25px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -23,37 +24,28 @@ font-size: 12px;}
   flex-wrap: wrap;
 }
 
-.fancy-bet{ display: flex}
-
-.fancy-bet span{
-    margin-left: 10px;
-    margin-right: 10px;
-    font-size: 12px;
-}
-.fancy-bet p{
-    width: 56px;
-    background-color: #bed5d8;
-    text-align: center;
-    border-radius: 3px;
-    color: #3b5160;
-    font-size: 11px;
-    height:15px;
-}
 
 
 .bk-title {
   font-weight: bold;
-  font-size: 14px;
+  font-size: 13px;
   letter-spacing: 0.3px;
   display: flex;
   flex-wrap: wrap;
   overflow: auto;
 }
 
+.bk-title img {
+  height: 17px;
+  width: 17px;
+  margin-right: 6px;
+  margin-top: 2px;
+}
+
 .bk-commission {
   font-weight: 400;
   margin-left: 8px;
-  font-size: 0.9rem;
+  font-size: 13px;
   opacity: 0.9;
 }
 
@@ -86,6 +78,8 @@ font-size: 12px;}
 .bk-name {
   width: 220px;
   padding-left: 12px;
+  font-weight: bold;
+  color:#000000;
 }
 
 .bk-odds {
@@ -117,17 +111,18 @@ font-size: 12px;}
   border-radius: 4px;
   border: none;
   font-size: 12px;
+  font-weight: bold;
   cursor: pointer;
   box-shadow: 0 2px 0 rgba(0, 0, 0, 0.04) inset;
 }
 
 .bk-btn.bk-back {
-  background: #7cc3f5;
+  background: #72bbef;
   border: 2px solid rgba(10, 90, 160, 0.12);
 }
 
 .bk-btn.bk-lay {
-  background: #fdbdcb;
+  background: #faa9ba;
   border: 2px solid rgba(200, 50, 120, 0.12);
 }
 

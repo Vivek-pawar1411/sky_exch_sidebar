@@ -18,6 +18,7 @@
   width: 100%;
   border-bottom: 1px solid #ccc;
   justify-content: space-between;
+      background-color: #fff;
 }
 
 .fancy-header {
@@ -26,18 +27,22 @@
 }
 
 .fancy-cell {
+    color:#000000;
     width: 50%;
   padding: 6px 8px;
   display: flex;
+  font-weight: bold;
   align-items: center;
 }
 
 .fancy_min-max{
     display: flex;
+    width: 50%;
 }
 
 .fancy-cell:last-child {
   border-right: none;
+  padding-right: 15px;
 }
 
 .fancy-row:hover {
@@ -46,7 +51,7 @@
 
 
 .no {
-  background: #fda5a5;
+  background: #faa9ba;
   text-align: center;
   justify-content: center;
   cursor: pointer;
@@ -54,7 +59,7 @@
 }
 
 .yes {
-  background: #97d4ff;
+  background: #72bbef;
   text-align: center;
   justify-content: center;
   cursor: pointer;
@@ -66,21 +71,24 @@
 }
 
 .fancy_yes-no{
-    /* width: 25%; */
     display: flex;
 }
 
-
-
-.fancy-bet{
-  background-color: #243a48;
+#fancy-no-header,
+#fancy-yes-header {
+    background: transparent !important;
+}
+.min{
+   font-weight: lighter;
 }
 
-.fancy-bet span{
-  margin-left: 10px;
-  margin-right: 10px;
-  font-size: 12px;
+.rate{
+  color:#1e1e1e;
 }
+
+.fancy-cell  dd{ font-weight: lighter;}
+
+.fancy-cell  dt{ color:#7e97a7; font-weight: 500; font-size: 11px;}
 
 #betBoxRow > div {
   padding: 0;
@@ -114,4 +122,46 @@
   #fancyBetHolder {
     width: 100%;
   }
+ 
 }
+
+.bk-commision{
+    background-color: #e4f1f9;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 8px;
+}
+
+.bk-title_b{
+    color: #1e1e1e;
+    padding: 2px 8px;
+    border-radius: 3px;
+    font-size: 12px;
+    margin: 0;
+}
+
+.bk-right{
+    display: flex;
+    gap: 10px;
+}
+
+.bk-box{
+  width: 56px;
+    background-color: #3b5160;
+    color: #bed5d8;
+    height: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    border-radius: 3px;
+    font-size: 11px;
+}
+
+.bk-box .label, .bk-box .value{
+    color: #bed5d8;
+}
+
+

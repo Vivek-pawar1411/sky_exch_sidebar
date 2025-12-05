@@ -6,103 +6,120 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sports</title>
     <link rel="icon" type="image/png" href="/image/skyexch.png">
+        <link rel="stylesheet" href="/css/sportz.css">
     <link rel="stylesheet" href="/css/multimarkets.css">
     <link rel="stylesheet" href="/css/kabaddi.css">
     <link rel="stylesheet" href="/css/header.css">
     <link rel="stylesheet" href="/css/esoccer.css">
     <link rel="stylesheet" href="/css/footer.css">
     <link rel="stylesheet" href="/css/main.css">
-    <link rel="stylesheet" href="/css/sportz.css">
-         <link rel="stylesheet" href="/css/chat-bot.css"> 
+    <link rel="stylesheet" href="/css/chat-bot.css">
 
 </head>
 
 <body>
     <header id="header"></header>
-    
-        <div class="container">
-            <div class="left-section" style="width: 20%; overflow-x: scroll;">
-                    <ul>
-                    <li><a href="/pages/sportz.html">Sports</a></li>
-                    <li><a href="/pages/cricket.html">Cricket</a></li>
-                    <li><a href="/pages/soccer.html">Soccer</a></li>
-                    <li><a href="/pages/tennis.html">Tennis</a></li>
-                    <li><a href="/pages/esoccer.html">E-Soccer</a></li>
-                    <li><a href="/pages/login_modal.html">Fancybet</a></li>
-                    <li><a href="/pages/kabaddi.html">Kabaddi</a></li> 
-              </ul>     
-            </div>
-            <div class="center-section">
-                <div class="kabaddi-img">
- <div class="image">
-                <img src="/image/main/baner_2.jpg" alt="">
-                <img src="/image/main/baner_1.jpg" alt=""> </div>             
-               </div>
-                <div class="sports-highlights">
-                    <div class="highlight-header">
-                        <span>Sports Highlights</span>
-                        <div class="view-by">
-                            <label>View by</label>
-                            <select>
-                                <option>Competition</option>
-                                <option>Time</option>
-                                <option>Matched</option>
-                            </select>
-                        </div>     
-                    </div>
 
-                      <div class="sport_menu" style="overflow: auto;">
-                 <ul>
-                    <li class="active"><a href="#">Cricket</a></li>
-                    <li><a href="#">Soccer</a></li>
-                    <li><a href="#"></a>Tennis</li>
-                    <li><a href="#"></a>Esoccer</li>
+    <div class="container">
+        <div class="left-section" style=" overflow-x: scroll;">
+            <ul>
+                <li ><a href="/pages/sportz.html">Sports </a></li>
+                <li ><a href="/pages/cricket.html">Cricket</a></li>
+                <li><a href="/pages/soccer.html">Soccer</a></li>
+                <li><a href="/pages/tennis.html">Tennis</a></li>
+                <li><a href="/pages/esoccer.html">E-Soccer</a></li>
+                <li><a href="/pages/login_modal.html">Fancybet</a></li>
+                <li><a href="/pages/kabaddi.html">Kabaddi</a></li>
+            </ul>
+        </div>
+        <div class="center-section">
+            <div class="kabaddi-img">
+                <div class="image">
+                    <img src="/image/main/baner_2.jpg" alt="">
+                    <img src="/image/main/baner_1.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="mobile_viewhigh">
+                <div class="top"></div>
+                <div class="middle">
+                    <h3>Highlights</h3>
+                </div>
+                <div class="bottom">
+                 <ul>   
+                    <li>by Time</li>
+                    <li>by Competition</li>
                  </ul>
                 </div>
 
-                    <div class="l-match">
-                        <div></div>
-                        <div class="r-match">
-                            <div style="margin-right: 5px;"> Matched</div>
-                            <div class="betting-op">1</div>
-                            <div class="betting-op">x</div>
-                            <div class="betting-op">2</div>
-                        </div>
+
+            </div>
+
+            <div class="sports-highlights" id="sportz">
+                <div class="highlight-header">
+                    <span>Sports Highlights</span>
+                    <div class="view-by">
+                        <label>View by</label>
+                        <select>
+                            <option>Competition</option>
+                            <option>Time</option>
+                            <option>Matched</option>
+                        </select>
                     </div>
+                </div>
+
+                <div class="sport_menu" style="overflow: auto;">
+                    <ul>
+                        <li class="active"><a href="#">Cricket</a></li>
+                        <li><a href="#">Soccer</a></li>
+                        <li><a href="#"></a>Tennis</li>
+                        <li><a href="#"></a>Esoccer</li>
+                    </ul>
+                </div>
+
+                <div class="l-match">
+                    <div></div>
+                    <div class="r-match">
+                        <div style="margin-right: 5px;"> Matched</div>
+                        <div class="betting-op op1">1</div>
+                        <div class="betting-op op2">x</div>
+                        <div class="betting-op op3">2</div>
                     </div>
-
-              <div id="match-row"></div>
-                <div id="footer"></div>
+                </div>
             </div>
 
-            <div class="right-section">
-                <div class="bet-title">Bet Slip <img src="/image/m_s.png" alt=""></div>
+            <div id="match-row"></div>
+            <div id="footer"></div>
+        </div>
 
-                <p>Click on the odds to add selections to the betslip.</p>
-                        <img src="/image/text.png" alt="" class="chat-icon">
+        <div class="right-section">
+            <div class="bet-title">Bet Slip <img src="/image/m_s.png" alt=""></div>
 
-            </div>
+            <p>Click on the odds to add selections to the betslip.</p>
+            <img src="/image/text.png" alt="" class="chat-icon">
 
-            </div>
+        </div>
 
-    
+    </div>
+
+
     <script src="/script.js"> </script>
-     <script>
-document.addEventListener('DOMContentLoaded', () => {
-  const tabs = document.querySelectorAll('.sport_menu li');
-  tabs.forEach(tab => {
-    tab.addEventListener('click', () => {
-      tabs.forEach(t => t.classList.remove('active'));
-      tab.classList.add('active');
-    });
-  });
-});
-</script>
-    <script> 
-        const container=document.getElementById("match-row")
-        fetch("/data/sportz_data.json").then(res=>res.json()).then(data=>{
-            data.sports.forEach(m=>{
-                const html=`
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const tabs = document.querySelectorAll('.sport_menu li');
+            tabs.forEach(tab => {
+                tab.addEventListener('click', () => {
+                    tabs.forEach(t => t.classList.remove('active'));
+                    tab.classList.add('active');
+                });
+            });
+        });
+    </script>
+    <script>
+        const container = document.getElementById("match-row")
+        fetch("/data/sportz_data.json").then(res => res.json()).then(data => {
+            data.sports.forEach(m => {
+                const html = `
                 <div class="match-row">
                     <div class="match-info">
                         <a href="${m.link}">${m.title}</a>
@@ -121,10 +138,14 @@ document.addEventListener('DOMContentLoaded', () => {
                               <div class="odds-box blue">${m.odds.blue3}</div>
                             <div class="odds-box pink">${m.odds.pink3}</div>
                     </div>
+                                      <img src="${m.img}">
+
+                     
                 </div>
                     `; container.insertAdjacentHTML("beforeend", html);
             });
         });
- </script>
+    </script>
 </body>
+
 </html>

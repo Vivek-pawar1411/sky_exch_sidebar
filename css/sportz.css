@@ -6,13 +6,67 @@
   background-color: #ffb80c;
 
 }
+.mobile_viewhigh {
+    display: none;
+}
+
+
+.mobile_viewhigh .middle{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    background-image: linear-gradient(-180deg, #2e4b5e 0%, #243a48 82%);
+justify-content: center;}
+
+.middle h3{
+    color:#ffffff;
+    font-size: 12px;
+}
+
+.mobile_viewhigh .bottom{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+}
+
+.bottom ul{
+        display: flex;
+    background: #e3e3e3;
+    box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, .15);
+    border-radius: 1.6vw;
+    width: 70%;
+    padding: 0.2666666667vw;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: 30px;
+}
+
+.bottom ul li {
+        color: #0074c4;
+    background: #fff;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, .15);
+        flex: 1;
+    height: 6vw;
+    border-radius: 1.3333333333vw;
+    font-size: 3.2vw;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 .sport_menu ul{
     display: flex;
     flex-direction: row;
     margin-left: 8px;
-    gap: 3px;
+    gap: 2px;
 }
+
+.left-section li a
+{font-weight: lighter;
+color:#222222 !important;}
 
 .sport_menu li{
     display: flex;
@@ -23,29 +77,36 @@
     justify-content: center;
     align-items: center;
     list-style: none;
-    min-width:65px;
+    min-width:125px;
     height: 25px;
     border-top: 1px solid #3b5160;
         border-left: 1px solid #3b5160;
-
             border-right: 1px solid #3b5160;
-
         border-radius:  3px;
-        background: #ffffff;
-        color:#3b5160;
+    background: #3b5160;
+    color :#ffffff;
         cursor: pointer;
 }
 
-.sport_menu li:hover {
-  text-decoration: underline; 
-}
+
 
 .sport_menu li.active{
-    background: #3b5160;
-    color :#ffffff
+        background: #ced5da;
+            color:#3b5160;
+
 }
 
 
 .sport_menu li.active a{
-    color :#ffffff
+    color :#080808
+}
+
+
+
+@media screen  and (min-width: 768px) {
+    /* #sportz{
+        display: none;
+    } */
+    
+    
 }

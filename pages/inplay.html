@@ -21,7 +21,7 @@
 
     <div class="container-inplay">
         <div class="center-section-inplay">
-            <div class="title">
+            <div class="title_to">
                 <ul>
                     <li class="active"><a href="/pages/inplay.html">In play</a></li>
                     <li><a href="/pages/today.html">Today</a></li>
@@ -34,13 +34,13 @@
                 <div class="sports-highlights">
                     <div class="highlight-header">
                         <span class="category-name"></span>
-                        <img src="/image/m_s.png" alt="icon">
+                        <img src="/image/expand.png" alt="icon">
                     </div>
 
                     <div class="l-match">
                         <div></div>
                         <div class="r-match">
-                            <div style="margin-right: 15px;"> Matched</div>
+                            <div> Matched</div>
                        <div class="betting-op op1">1</div>
                             <div class="betting-op op2">x</div>
                             <div class="betting-op op3">2</div>
@@ -58,14 +58,14 @@
                     <img src="/image/text.png" alt="" class="chat-icon">
 
 
-            <!-- <div class="bet-buttons" style="margin-top: 20px;padding: 5px;">
+             <div class="bet-buttons" style="margin-top: 20px; ">
                 <button class="cancel-all" id="cancelAll">Cancel All</button>
                 <button class="place-bets" id="placeBets" onclick="location.href='/pages/login_modal.html'">Place Bets</button>
             </div>
 
             <label class="confirm-check">
                 <input type="checkbox" id="confirmCheck"> Please confirm your bets.
-            </label> -->
+            </label> 
         </div>
     </div>  
     <div id="footer"></div>
@@ -75,7 +75,7 @@
 
 
 <!-- LOAD DATA + RENDER -->
- <script src="/script.js"></script>
+<script src="/script.js"></script>
    <script>
   const betButtons = document.querySelector('.bet-buttons');
   const confirmCheck = document.querySelector('.confirm-check');
@@ -144,5 +144,6 @@ ${m.live ? `<img src="${m.live}" class="live-icon">` : ""}
 
 });
 </script>
+
 </body>
 </html>
